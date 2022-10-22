@@ -1,0 +1,29 @@
+{
+    "name": "dekache",
+    "version": "1.0.1",
+    "description": "Simple cache system written by dekitarpg@gmail.com",
+    "author": {
+        "name": "DekitaRPG",
+        "email": "dekitarpg@gmail.com",
+        "url": "https://dekitarpg.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Dekita/dekache"
+    },
+    "license": "MIT",
+    "main": "./src/dekache.js",
+    "scripts": {
+        "generate-doc": "jsdoc -c docgen/dek-jsdoc.json -R ./readme.md"
+    },
+    "devDependencies": {
+        "@pixi/jsdoc-template": "^2.6.0",
+        "jsdoc": "^3.6.11"
+    },
+    "dependencies": {},
+    "keywords": [
+        "cache",
+        "dekita",
+        "lightweight"
+    ]
+}

@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>dekache</title>
+    
+    <meta name="description" content="Documentation for the dekache module." />
+    
+        <meta name="keywords" content="dekita lightweight cache" />
+        <meta name="keyword" content="dekita lightweight cache" />
+    
+    
+    
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+    <script>
+    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":true,"includeDate":true},"applicationName":"dekache","linenums":true,"favicon":"favicon.png","meta":{"title":"dekache","description":"Documentation for the dekache module.","keyword":"dekita lightweight cache"},"faviconType":"image/png"};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">dekache</a></h3>
+    <button id="menuToggle" class="btn btn-link btn-lg menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="search">
+        <input id="search" type="text" class="form-control input-md" placeholder="Search...">
+    </div>
+    <ul class="list">
+    
+    
+        <li class="item" data-name="Dekache">
+            <span class="title  ">
+                
+                
+                    <a href="Dekache.html">Dekache</a>
+                
+            </span>
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent " data-name="Dekache#data"><a href="Dekache.html#data">data</a></li>
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            <span class="subtitle">Typedefs</span>
+            
+                <li class="parent" data-name="Dekache~options"><a href="Dekache.html#~options">options</a></li>
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="Dekache#clear"><a href="Dekache.html#clear">clear</a></li>
+            
+                <li class="parent  " data-name="Dekache#delete"><a href="Dekache.html#delete">delete</a></li>
+            
+                <li class="parent  " data-name="Dekache#get"><a href="Dekache.html#get">get</a></li>
+            
+                <li class="parent  " data-name="Dekache#initialize"><a href="Dekache.html#initialize">initialize</a></li>
+            
+                <li class="parent  " data-name="Dekache#key"><a href="Dekache.html#key">key</a></li>
+            
+                <li class="parent  " data-name="Dekache#loop"><a href="Dekache.html#loop">loop</a></li>
+            
+                <li class="parent  " data-name="Dekache#set"><a href="Dekache.html#set">set</a></li>
+            
+                <li class="parent  " data-name="Dekache#start"><a href="Dekache.html#start">start</a></li>
+            
+                <li class="parent  " data-name="Dekache#stop"><a href="Dekache.html#stop">stop</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item" data-name="DekacheItem">
+            <span class="title  ">
+                
+                
+                    <a href="DekacheItem.html">DekacheItem</a>
+                
+            </span>
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent " data-name="DekacheItem#data"><a href="DekacheItem.html#data">data</a></li>
+            
+                <li class="parent " data-name="DekacheItem#init"><a href="DekacheItem.html#init">init</a></li>
+            
+                <li class="parent " data-name="DekacheItem#time"><a href="DekacheItem.html#time">time</a></li>
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="DekacheItem#checkTimeDiff"><a href="DekacheItem.html#checkTimeDiff">checkTimeDiff</a></li>
+            
+                <li class="parent  " data-name="DekacheItem#initialize"><a href="DekacheItem.html#initialize">initialize</a></li>
+            
+                <li class="parent  " data-name="DekacheItem#renew"><a href="DekacheItem.html#renew">renew</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+    </ul>
+</div>
+
+    <div class="main">
+        <h1 class="page-title" data-filename="DekacheItem.html">Class: DekacheItem</h1>
+        
+
+
+
+<section>
+    
+<header>
+    <div class="header content-size">
+        <h2>DekacheItem
+        </h2>
+        
+            <div class="class-description"><p>Used within the Dekache class.</p></div>
+        
+    </div>
+</header>  
+
+<article class="content-size">
+    
+        <div class="container-overview">
+        
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="DekacheItem">
+            <a class="share-icon" href="#DekacheItem"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                new DekacheItem
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="dekache-item.js.html#line6">dekache-item.js:6</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>See <a href="DekacheItem.html#initialize"><code>DekacheItem#initialize</code></a></p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <h3 class="subsection-title">Members</h3>
+        
+        <dl class="list-members">
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="data">
+            <a class="share-icon" href="#data"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">data</span>
+            <span class="type-signature type">object</span>
+            
+            
+            
+            
+        </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The data that this cache item is storing.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="init">
+            <a class="share-icon" href="#init"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">init</span>
+            <span class="type-signature type">number</span>
+            
+            
+            
+            
+        </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The Date.now() when this item was initially created.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="time">
+            <a class="share-icon" href="#time"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">time</span>
+            <span class="type-signature type">number</span>
+            
+            
+            
+            
+        </h4>
+    </div>
+    
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        <p>The Date.now() this item was last renewed.</p>
+    </div>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+        <h3 class="subsection-title">Methods</h3>
+        
+        <dl class="list-methods">
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="checkTimeDiff">
+            <a class="share-icon" href="#checkTimeDiff"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                checkTimeDiff
+            </span>
+            <span class="signature">(mins)</span><span class="type-signature">boolean</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="dekache-item.js.html#line43">dekache-item.js:43</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Checks if this item was created longer than <code>mins</code> ago.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>mins</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>the number of minutes to check against (integer).</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            
+            <td class="type">
+            
+                        boolean
+                        
+                    
+            </td>
+            <td class="description last">Based on if item was renewed longer than <code>mins</code> ago.</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="initialize">
+            <a class="share-icon" href="#initialize"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                initialize
+            </span>
+            <span class="signature">(cache_data)</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="dekache-item.js.html#line33">dekache-item.js:33</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Called automatically when constructed</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>cache_data</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+            
+            
+            
+            <td class="description last">
+                
+                <p>The data to hold, can be any object or primative</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <div class="nameContainer">
+        <h4 class="name" id="renew">
+            <a class="share-icon" href="#renew"><span class="glyphicon glyphicon-link"></span></a>
+            <span class="">
+                renew
+            </span>
+            <span class="signature">()</span>
+            
+            
+            
+            
+        </h4>
+    
+        
+        <div class="tag-source">
+            <a href="dekache-item.js.html#line50">dekache-item.js:50</a>
+        </div>
+        
+    </div>
+
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Renews the time for this item. This will stop <a href="DekacheItem.html#checkTimeDiff"><code>DekacheItem#checkTimeDiff</code></a> from returning true.
+Which in turn, will stop the item from being cleared from the cache.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+</dd>
+
+        </dl>
+    
+    
+    
+    
+    
+
+    
+</article>
+
+</section>  
+
+
+
+
+
+        
+
+        <footer class="content-size">
+            <div class="footer">
+                Documentation generated by <a target="_blank" href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Sat Oct 22 2022 13:09:37 GMT+0100 (British Summer Time)
+            </div>
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/main.js"></script>
+
+
+</body>
+</html>

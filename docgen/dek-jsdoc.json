@@ -1,0 +1,39 @@
+{
+    "plugins": [
+        "plugins/markdown"
+    ],
+    "source": {
+        "include": [
+            "./src"
+        ],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "opts": {
+        "recurse": true,
+        "private": true, 
+        "encoding": "utf8",
+        "destination": "./docs",
+        "template": "./node_modules/@pixi/jsdoc-template"
+    },
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": ["jsdoc","closure"]
+    },
+    "templates": {
+        "cleverLinks": true,
+        "monospaceLinks": true,
+        "default": {
+            "outputSourceFiles": true,
+            "includeDate": true
+        },
+        "applicationName": "dekache",
+        "linenums": true,
+        "favicon": "./docgen/avatar.png",
+        "meta": {
+            "title": "dekache",
+            "description": "Documentation for the dekache module.",
+            "keyword": "dekita lightweight cache"
+        }
+    }
+}

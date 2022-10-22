@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>dekache</title>
+    
+    <meta name="description" content="Documentation for the dekache module." />
+    
+        <meta name="keywords" content="dekita lightweight cache" />
+        <meta name="keyword" content="dekita lightweight cache" />
+    
+    
+    
+    <link rel="icon" type="image/png" href="favicon.png"/>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+
+    
+    <script>
+    var config = {"monospaceLinks":true,"cleverLinks":true,"default":{"outputSourceFiles":true,"includeDate":true},"applicationName":"dekache","linenums":true,"favicon":"favicon.png","meta":{"title":"dekache","description":"Documentation for the dekache module.","keyword":"dekita lightweight cache"},"faviconType":"image/png"};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html">dekache</a></h3>
+    <button id="menuToggle" class="btn btn-link btn-lg menu-toggle">
+        <span class="glyphicon glyphicon-menu-hamburger"></span>
+    </button>
+    <div class="search">
+        <input id="search" type="text" class="form-control input-md" placeholder="Search...">
+    </div>
+    <ul class="list">
+    
+    
+        <li class="item" data-name="Dekache">
+            <span class="title  ">
+                
+                
+                    <a href="Dekache.html">Dekache</a>
+                
+            </span>
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent " data-name="Dekache#data"><a href="Dekache.html#data">data</a></li>
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            <span class="subtitle">Typedefs</span>
+            
+                <li class="parent" data-name="Dekache~options"><a href="Dekache.html#~options">options</a></li>
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="Dekache#clear"><a href="Dekache.html#clear">clear</a></li>
+            
+                <li class="parent  " data-name="Dekache#delete"><a href="Dekache.html#delete">delete</a></li>
+            
+                <li class="parent  " data-name="Dekache#get"><a href="Dekache.html#get">get</a></li>
+            
+                <li class="parent  " data-name="Dekache#initialize"><a href="Dekache.html#initialize">initialize</a></li>
+            
+                <li class="parent  " data-name="Dekache#key"><a href="Dekache.html#key">key</a></li>
+            
+                <li class="parent  " data-name="Dekache#loop"><a href="Dekache.html#loop">loop</a></li>
+            
+                <li class="parent  " data-name="Dekache#set"><a href="Dekache.html#set">set</a></li>
+            
+                <li class="parent  " data-name="Dekache#start"><a href="Dekache.html#start">start</a></li>
+            
+                <li class="parent  " data-name="Dekache#stop"><a href="Dekache.html#stop">stop</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+        <li class="item" data-name="DekacheItem">
+            <span class="title  ">
+                
+                
+                    <a href="DekacheItem.html">DekacheItem</a>
+                
+            </span>
+            
+            <ul class="members itemMembers">
+            
+            <span class="subtitle">Members</span>
+            
+                <li class="parent " data-name="DekacheItem#data"><a href="DekacheItem.html#data">data</a></li>
+            
+                <li class="parent " data-name="DekacheItem#init"><a href="DekacheItem.html#init">init</a></li>
+            
+                <li class="parent " data-name="DekacheItem#time"><a href="DekacheItem.html#time">time</a></li>
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li class="parent  " data-name="DekacheItem#checkTimeDiff"><a href="DekacheItem.html#checkTimeDiff">checkTimeDiff</a></li>
+            
+                <li class="parent  " data-name="DekacheItem#initialize"><a href="DekacheItem.html#initialize">initialize</a></li>
+            
+                <li class="parent  " data-name="DekacheItem#renew"><a href="DekacheItem.html#renew">renew</a></li>
+            
+            </ul>
+            
+            <ul class="events itemMembers">
+            
+            </ul>
+            
+        </li>
+    
+    </ul>
+</div>
+
+    <div class="main">
+        <h1 class="page-title" data-filename="dekache-item.js.html">Source: dekache-item.js</h1>
+        
+
+
+    
+    <section>
+        <header>
+            <div class="header content-size">
+                <h2>dekache-item.js</h2>
+            </div>
+        </header>
+        <article>
+            <pre id="source-code" class="prettyprint source linenums"><code>
+/**
+* Used within the Dekache class.
+* @class 
+*/
+class DekacheItem {
+    /**
+    * See {@link DekacheItem#initialize}
+    */
+    constructor() {this.initialize(...arguments)}
+    /**
+    * The data that this cache item is storing.
+    * @type {object}
+    * @read_only
+    */
+    get data() {return this._data}
+    /**
+    * The Date.now() this item was last renewed.
+    * @type {number}
+    * @read_only
+    */
+    get time() {return this._time}
+    /**
+    * The Date.now() when this item was initially created.
+    * @type {number}
+    * @read_only
+    */
+    get init() {return this._init}
+    /**
+    * Called automatically when constructed
+    * @param {object} cache_data - The data to hold, can be any object or primative
+    */
+    initialize(cache_data) {
+        this._data = cache_data;
+        this._time = Date.now();
+        this._init = Date.now();
+    }
+    /**
+    * Checks if this item was created longer than `mins` ago.
+    * @param {number} mins - the number of minutes to check against (integer).
+    * @returns {boolean} Based on if item was renewed longer than `mins` ago.
+    */
+    checkTimeDiff(mins) {
+        return Date.now() - this._time >= 1000 * 60 * mins;
+    }
+    /**
+    * Renews the time for this item. This will stop {@link DekacheItem#checkTimeDiff} from returning true.
+    * Which in turn, will stop the item from being cleared from the cache.
+    */
+    renew() {this._time = Date.now()}
+}
+
+module.exports = DekacheItem;</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer class="content-size">
+            <div class="footer">
+                Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.11</a> on Sat Oct 22 2022 13:09:37 GMT+0100 (British Summer Time)
+            </div>
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/main.js"></script>
+
+
+</body>
+</html>
