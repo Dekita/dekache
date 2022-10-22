@@ -1,4 +1,4 @@
-[<img src="https://github.com/Dekita/dekache/blob/main/docgen/header.png" style="margin-top: 28px;">](https://dekitarpg.com/)
+[<img src="https://raw.githubusercontent.com/Dekita/dekache/main/docgen/header.png" style="margin-top: 28px;">](https://dekitarpg.com/)
 --------------------------------------------------------------------------------
 
 # What is dekache? 
